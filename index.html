@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра "CODE-прогресса"</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon/memory.png"/>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>CODE-прогресса</h1>
+        <p class="description">Вам нужно найти все пары карточек, соответствующие одной теме, за минимальное количество ходов</p>
+        <button class="start-game">Начать игру</button>
+        <div class="game-board" id="gameBoard" style="display: none;">
+            <div class="memory-card" id="economy">
+                <img class="front-face" src="IMG/economy1.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="economy">
+                <img class="front-face" src="IMG/economy2.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="economy">
+                <img class="front-face" src="IMG/economy3.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="economy">
+                <img class="front-face" src="IMG/economy4.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="management">
+                <img class="front-face" src="IMG/management1.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="management">
+                <img class="front-face" src="IMG/management2.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="management">
+                <img class="front-face" src="IMG/management3.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="management">
+                <img class="front-face" src="IMG/management4.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="IT">
+                <img class="front-face" src="IMG/IT1.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="IT">
+                <img class="front-face" src="IMG/IT2.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="IT">
+                <img class="front-face" src="IMG/IT3.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="IT">
+                <img class="front-face" src="IMG/IT4.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="engineer">
+                <img class="front-face" src="IMG/engineer1.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="engineer">
+                <img class="front-face" src="IMG/engineer2.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="engineer">
+                <img class="front-face" src="IMG/engineer3.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+
+            <div class="memory-card" id="engineer">
+                <img class="front-face" src="IMG/engineer4.jpg" alt="Image">
+                <img class="back-face" src="IMG/back-img.jpg" alt="Back">
+            </div>
+        </div> 
+    </div>
+
+    <div class="modal-overlay" style="display: none;">
+        <div class="modal-window">
+            <h2>Победа!</h2>
+            <p>Количество ходов: <span class="move-counter">0</span></p>
+            <button class="restart-game">Играть снова</button>
+        </div>
+    </div>
+    <div class="modal-overlay-next" style="display: none;">
+        <div class="modal-window-next">
+            <p class="nextp">Вы нашли все карточки по теме!</p>
+            <p class="nextp">Количество ходов: <span class="move-counter">0</span></p>
+            <button class="nextBtn">Продолжить</button>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
